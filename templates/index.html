@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Home — Jeremy Naugle{% endblock %}
+
+{% block content %}
+  <h1>Welcome 👋</h1>
+  <p>I’m Jeremy — Army data/analytics professional and Python developer.  
+     This site is my portfolio and a place to showcase the apps I build.</p>
+
+  <p>
+    <a href="{{ url_for('projects') }}">View Projects</a> |
+    <a href="{{ url_for('apps') }}">Try Apps</a>
+  </p>
+{% endblock %}

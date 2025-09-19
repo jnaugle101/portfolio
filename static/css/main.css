@@ -1,0 +1,9 @@
+/* Global tweaks */
+:root { --accent:#0b5; }
+h1 { margin-top: 0.2rem; }
+a { color: var(--accent); }
+a:hover { text-decoration: underline; }
+
+/* Layout polish */
+.container { line-height: 1.5; }
+header { position: sticky; top: 0; background:#f4f4f4; z-index:10; }
