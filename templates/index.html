@@ -7,8 +7,17 @@
   <p>I’m Jeremy — Army data analytics professional and Python developer.
      This site is my portfolio and a place to showcase the apps I build.</p>
 
-  <p>
-    <a href="{{ url_for('projects') }}">View Projects</a> |
-    <a href="{{ url_for('apps') }}">Try Apps</a>
-  </p>
+<div class="profile">
+  <img src="{{ url_for('static', filename='img/3.jpg') }}" alt="Profile Photo">
+  <div class="profile-text">
+    <h1>Dr. Jeremy Naugle (Dr. J)</h1>
+    <p>Army Officer • Data Analyst • Aspiring Developer</p>
+  </div>
+</div>
+
+<div class="nav-buttons">
+  <a href="{{ url_for('projects') }}">📂 Projects</a>
+  <a href="{{ url_for('apps') }}">⚙️ Apps</a>
+</div>
+
 {% endblock %}
