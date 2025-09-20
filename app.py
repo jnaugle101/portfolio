@@ -17,7 +17,7 @@ def apps():
     return render_template("apps.html")
 
 @app.route("/resume")
-def apps():
+def resume():
     return render_template("resume.html")
 
 if __name__ == "__main__":
