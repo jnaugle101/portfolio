@@ -3,6 +3,39 @@
 {% block title %}Apps — Jeremy Naugle{% endblock %}
 
 {% block content %}
+{% block content %}
+<style>
+  .app-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:16px;
+    margin-top:16px;
+  }
+  .app-card{
+    background:#fff;
+    border:1px solid #e5e7eb;          /* subtle box border */
+    border-radius:12px;                 /* rounded corners */
+    padding:16px 18px;
+    box-shadow:0 1px 3px rgba(0,0,0,.06);
+    transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  .app-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    border-color:#d1d5db;
+  }
+  .app-card h3{ margin:0 0 6px; }
+  .app-card p{ margin:0 0 12px; color:#555; }
+  .app-card a{
+    display:inline-block;
+    padding:8px 12px;
+    border-radius:8px;
+    border:1px solid #3b82f6;
+    text-decoration:none;
+    font-weight:600;
+  }
+  .app-card a:hover{ background:#3b82f6; color:#fff; }
+</style>
 <h1>💁 My Apps</h1>
 
 <div class="app-grid">
